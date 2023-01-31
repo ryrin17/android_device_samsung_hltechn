@@ -39,12 +39,12 @@ void vendor_load_properties()
 {
     std::string bootloader = GetProperty("ro.bootloader", "");
 
-    if (bootloader.find("N9008V") == 0) {
+    if (bootloader.find("N9009") == 0) {
         /* hltezm - China Mobile */
         property_override("ro.build.description", "hltezm-user 5.0 LRX21V N9008VZMSDQD2 release-keys");
         set_ro_product_prop("device", "hlte");
         set_ro_product_prop("fingerprint", "samsung/hltezm/hlte:5.0/LRX21V/N9008VZMSDQD2:user/release-keys");
-        set_ro_product_prop("model", "SM-N9008V");
+        set_ro_product_prop("model", "SM-N9009");
         set_ro_product_prop("name", "hlte");
     }
 
